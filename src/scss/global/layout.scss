@@ -20,6 +20,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .section {
@@ -90,17 +91,16 @@ body {
 }
 
 // ********************* GRID ********************** //
-// .grid {
-//   @for $i from 1 through 5 {
-//     &--#{$grid-space * $i} {
-//       grid-template-columns: repeat(auto-fill, minmax($grid-space * $i, 1fr));
-//       grid-template-rows: repeat(auto-fill, minmax($grid-space * $i, 1fr));
-//     }
-//   }
-//   &--column {
-//     grid-auto-flow: column;
-//   }
-// }
+.grid {
+  display: grid;
+  gap: $spacing-32;
+  @for $i from 1 through 10 {
+    &--#{$i} {
+      @extend .grid;
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+}
 
 // ********************* LAYOUT MODIFIERS ********************** //
 .padding {

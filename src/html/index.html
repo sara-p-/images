@@ -8,49 +8,143 @@
       <div class="header__wrapper">
         <div class="header__row">
           <div class="header__col">
-            <a href="/" class="logo">
-              <img
-                src="<%=require('../../images/placeholder-logo.svg')%>"
-                alt="Logo"
-                class="logo__image"
-              />
-            </a>
+            <a href="/" class="logo">Home</a>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="section">
+      <section id="filters" class="section">
         <div class="section__wrapper">
           <div class="section__row">
             <div class="section__col">
-              <h1>Project Title</h1>
+              <div class="controls">
+                <div class="controls__range">
+                  <input
+                    type="range"
+                    id="grid-rows"
+                    name="grid-rows"
+                    min="1"
+                    max="10"
+                    value="5"
+                  />
+                  <label for="grid-rows">Grid Rows</label>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-main" class="section">
+        <div class="section__wrapper">
+          <div class="section__row">
             <div class="section__col">
-              <img
-                class="image--contain"
-                src="<%=require('../../images/folder.svg')%>"
-                alt="folder"
-              />
+              <ul id="image-list" class="list grid--5">
+                <li class="list__item" data-order="0">
+                  <button class="list__button">
+                    <img
+                      src="<%=require('../../images/day2-brandon-outside.jpg')%>"
+                      alt=""
+                      class="image--contain"
+                    />
+                    <figcaption class="caption">This is a caption</figcaption>
+                  </button>
+                </li>
+                <li class="list__item" data-order="1">
+                  <button class="list__button">
+                    <img
+                      src="<%=require('../../images/day2-brandon-skullrock.jpg')%>"
+                      alt=""
+                      class="image--contain"
+                    />
+                    <figcaption class="caption">This is a caption</figcaption>
+                  </button>
+                </li>
+                <li class="list__item" data-order="2">
+                  <button class="list__button">
+                    <img
+                      src="<%=require('../../images/day2-brandon-skullrock2.jpg')%>"
+                      alt=""
+                      class="image--contain"
+                    />
+                    <figcaption class="caption">This is a caption</figcaption>
+                  </button>
+                </li>
+                <li class="list__item" data-order="3">
+                  <button class="list__button">
+                    <img
+                      src="<%=require('../../images/day2-brandon-skullrock3.jpg')%>"
+                      alt=""
+                      class="image--contain"
+                    />
+                    <figcaption class="caption">This is a caption</figcaption>
+                  </button>
+                </li>
+                <li class="list__item" data-order="4">
+                  <button class="list__button">
+                    <img
+                      src="<%=require('../../images/day2-couple1.jpg')%>"
+                      alt=""
+                      class="image--contain"
+                    />
+                    <figcaption class="caption">This is a caption</figcaption>
+                  </button>
+                </li>
+                <li class="list__item" data-order="0">
+                  <button class="list__button">
+                    <img
+                      src="<%=require('../../images/day2-brandon-outside.jpg')%>"
+                      alt=""
+                      class="image--contain"
+                    />
+                    <figcaption class="caption">This is a caption</figcaption>
+                  </button>
+                </li>
+                <li class="list__item" data-order="1">
+                  <button class="list__button">
+                    <img
+                      src="<%=require('../../images/day2-brandon-skullrock.jpg')%>"
+                      alt=""
+                      class="image--contain"
+                    />
+                    <figcaption class="caption">This is a caption</figcaption>
+                  </button>
+                </li>
+                <li class="list__item" data-order="2">
+                  <button class="list__button">
+                    <img
+                      src="<%=require('../../images/day2-brandon-skullrock2.jpg')%>"
+                      alt=""
+                      class="image--contain"
+                    />
+                    <figcaption class="caption">This is a caption</figcaption>
+                  </button>
+                </li>
+                <li class="list__item" data-order="3">
+                  <button class="list__button">
+                    <img
+                      src="<%=require('../../images/day2-brandon-skullrock3.jpg')%>"
+                      alt=""
+                      class="image--contain"
+                    />
+                    <figcaption class="caption">This is a caption</figcaption>
+                  </button>
+                </li>
+                <li class="list__item" data-order="4">
+                  <button class="list__button">
+                    <img
+                      src="<%=require('../../images/day2-couple1.jpg')%>"
+                      alt=""
+                      class="image--contain"
+                    />
+                    <figcaption class="caption">This is a caption</figcaption>
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__row">
-          <div class="footer__col">
-            <a href="/" class="logo">
-              <img
-                src="<%=require('../../images/placeholder-logo.svg')%>"
-                alt="Home"
-                class="logo__image"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
